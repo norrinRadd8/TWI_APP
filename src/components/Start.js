@@ -1,16 +1,15 @@
 import React from 'react';
 
-import '../index'; // Import the CSS file
-
 const Start = () => {
   return (
-    <div className="start-container">
-      <h1 className="title">TWI</h1>
-      <button className="start-button" onClick={() => console.log('Start button clicked')}>
-        Start
-      </button>
+    <div className='start_container'>
+      <img src='./images/logo-stacked.png' alt='Logo' className='start_logo' />
+      <div className='start_button'>
+        <button className='start_button_inner'>START</button>
+      </div>
     </div>
   );
 };
 
 export default Start;
+
