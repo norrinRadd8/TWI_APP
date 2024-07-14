@@ -3,6 +3,8 @@ import React, {useState, useEffect, useRef} from 'react';
 
 import Header from "./components/Header"
 import Main from "./components/Main";
+import Mission from './components/Mission';
+// import Cta from './components/Cta';
 import Navbar from "./components/Navbar";
 import Video from "./components/Video"; 
 
@@ -40,6 +42,7 @@ const App = () => {
       </div>
       <Navbar isHeaderVisible={isHeaderVisible} />
       <Main />
+      <Mission />
       <Video embedId={"g5ul2vH-aDs"} />  
     </div>
   );
