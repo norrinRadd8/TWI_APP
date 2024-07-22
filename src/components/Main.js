@@ -1,5 +1,4 @@
 import React from 'react';
-import CTA from './Cta';
 
 const Main = () => {
   return (
@@ -10,9 +9,7 @@ const Main = () => {
     <div>
     <img src='./images/header-logo.png' alt='Logo' className='header_logo' />
     </div> 
-    <div className='main_cta'>
-    < CTA /> 
-    </div>
+   
     
       <div className="intro_text">
          <p >
