@@ -1,10 +1,12 @@
 import React from 'react';
-import CTA from './Cta';
 
 const About = () => {
     return (
         <div className="about_container">
             <div className="about_content">
+            <div className="about_images">
+                    <img src="./images/alex.jpg" alt="Alex" className="image" />
+                </div>
                 <h2 className="about_title"><span className='transparent-outline'>Alex</span></h2>
                 <p className="about_text">
                     has been a coach for 10 years, working with a variety of professional athletes, youth athletes, sports teams, celebrities, and those who want to improve their health and lifestyle.
@@ -14,12 +16,8 @@ const About = () => {
                 </p>
                 </div>
                 
-                <div className="about_images">
-                    <img src="./images/alex.jpg" alt="Alex" className="image" />
-                </div>
-                <div>
-    < CTA /> 
-    </div>
+                
+            
             </div>
        
     );

@@ -9,6 +9,8 @@ import About from './components/About';
 import Cta from './components/Cta';
 import Navbar from "./components/Navbar";
 import Video from "./components/Video"; 
+import Results from './components/Results';
+import FAQ from './components/Faq';
 
 import "./index.css";
 
@@ -44,11 +46,14 @@ const App = () => {
       </div>
       <Navbar isHeaderVisible={isHeaderVisible} />
       <Main />
+      <Mission />
+      <Cta />
+      <About />
       <Cta />
       <Statement />
-      <Mission />
-      <About />
       <Video embedId={"g5ul2vH-aDs"} />  
+      <Results />
+      <FAQ />
     </div>
   );
 }

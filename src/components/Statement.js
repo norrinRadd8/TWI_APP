@@ -14,34 +14,40 @@ const Statement = () => {
     const animateText = async () => {
       while (true) {
         // Display "MOVE WITH POISE"
-        textRef.current.innerText = 'MOVE WITH POISE';
+        textRef.current.innerText = '"MOVE WITH POISE"';
         textRef.current.className = 'statement-text scale-up-fade-out';
         await new Promise(resolve => setTimeout(resolve, 2000)); // Wait for animation to finish
 
-        // Clear text and prepare for next text
-        textRef.current.className = 'statement-text';
-        await new Promise(resolve => setTimeout(resolve, 0)); // Short delay to ensure smooth transition
+        // Fade out
+        textRef.current.classList.remove('scale-up-fade-out');
+        textRef.current.classList.add('hidden');
+        await new Promise(resolve => setTimeout(resolve, 1000)); // Short delay before next text
 
         // Display "BUILD RESILIENCE"
-        textRef.current.innerText = 'BUILD RESILIENCE';
+        textRef.current.innerText = '"BUILD RESILIENCE"';
         textRef.current.className = 'statement-text scale-up-fade-out';
         await new Promise(resolve => setTimeout(resolve, 2000)); // Wait for animation to finish
 
-        // Clear text and prepare for next text
-        textRef.current.className = 'statement-text';
-        await new Promise(resolve => setTimeout(resolve, 0)); // Short delay to ensure smooth transition
+        // Fade out
+        textRef.current.classList.remove('scale-up-fade-out');
+        textRef.current.classList.add('hidden');
+        await new Promise(resolve => setTimeout(resolve, 1000)); // Short delay before next text
 
         // Display "IMPROVE PERFORMANCE"
-        textRef.current.innerText = 'IMPROVE PERFORMANCE';
+        textRef.current.innerText = '"IMPROVE PERFORMANCE!"';
         textRef.current.className = 'statement-text';
+        textRef.current.style.fontSize = '6rem';
         shudderEffect();
         await new Promise(resolve => setTimeout(resolve, 2500)); // Wait for shudder effect
 
-        // Clear text and prepare for loop
-        textRef.current.className = 'statement-text fade-out';
-        await new Promise(resolve => setTimeout(resolve, 0)); // Wait for fade-out to finish
+        // Fade out
+        textRef.current.classList.add('hidden');
+        await new Promise(resolve => setTimeout(resolve, 1000)); // Wait for fade-out to finish
 
-        textRef.current.innerText = ''; // Ensure text is cleared before the next loop
+        // Prepare for next loop
+        textRef.current.innerText = '';
+        textRef.current.classList.remove('hidden');
+        await new Promise(resolve => setTimeout(resolve, 1000)); // Short delay to ensure smooth transition
       }
     };
 
@@ -50,7 +56,7 @@ const Statement = () => {
 
   return (
     <div className="statement-container">
-      <div ref={textRef} className="statement-text" style={{ fontSize: '4rem', fontWeight: 'bold' }}></div>
+      <div ref={textRef} className="statement-text"></div>
     </div>
   );
 };

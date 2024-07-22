@@ -3,6 +3,7 @@ import React from "react";
 const Video = ({ embedId }) => {
   return (
     <div className="video_container">
+      <div className="video_content">
       <iframe
         width="853"
         height="480"
@@ -12,6 +13,8 @@ const Video = ({ embedId }) => {
         allowFullScreen
         title="TEST VIDEO"
       />
+      </div>
+      
     </div>
   );
 };
