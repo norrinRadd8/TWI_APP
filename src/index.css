@@ -517,22 +517,25 @@
 }
 
 /* Styling for the introductory image */
-.intro_image {
+.results_intro_image {
   max-width: 100%;
   height: auto;
   margin-bottom: 20px;
 }
 
 /* Styling for the introductory title */
-.intro_title {
-  font-size: 2.5rem;
+.results_title {
+  font-size: 5.8rem;
   margin-bottom: 10px;
+  text-align: left;
+  padding: 20px;
 }
 
 /* Styling for the introductory text */
-.intro_text {
-  font-size: 1.2rem;
+.results_text {
+  font-size: 3.3rem;
   margin-bottom: 30px;
+  padding: 20px;
   color: #555;
 }
 
@@ -546,18 +549,14 @@
 }
 
 /* Styling for each image container */
-.image_container {
+.results_image_container {
   width: calc(33.333% - 20px); /* 3 images per row with spacing */
   height: 200px;
-  background-color: #ddd;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1.5rem;
   color: #777;
-  border: 1px solid #ccc;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
   overflow: hidden; /* Ensure the image does not overflow its container */
+  width: 100%;
+  height: 100%;
 }
 
 /* Styling for each image */
@@ -569,13 +568,13 @@
 
 /* Ensure responsiveness */
 @media (max-width: 768px) {
-  .image_container {
+  .results_image_container {
     width: calc(50% - 20px); /* 2 images per row on smaller screens */
   }
 }
 
 @media (max-width: 480px) {
-  .image_container {
+  .results_image_container {
     width: 100%; /* 1 image per row on very small screens */
   }
 }

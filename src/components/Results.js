@@ -14,13 +14,14 @@ const Results = () => {
 
   return (
     <div className="results_container">
+        <h1 className="results_title"><span className='transparent-outline'>Transformative Results</span></h1>
       <img 
         src="./images/results-image.jpg" 
         alt="" 
-        className="intro_image" 
+        className="results_intro_image" 
       />
-      <h1 className="intro_title">Transformative Results</h1>
-      <p className="intro_text">
+      
+      <p className="results_text">
         Experience the transformation with our cutting-edge solutions. Our approach ensures that you achieve the results you desire.
       </p>
       <div className="image_grid">
