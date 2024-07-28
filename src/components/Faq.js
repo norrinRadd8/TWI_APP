@@ -7,10 +7,11 @@ const FAQ = () => {
 
   // Questions and answers
   const faqs = [
-    { question: "What is the question?", answer: "Lorem ipsum dolor sit amet, consectetur adipiscing elit." },
-    { question: "What is the question here?", answer: "Maecenas egestas feugiat maximus. Aenean et nulla ornare, blandit ante sed, porttitor nisi. Nulla a tempor tellus." },
-    { question: "What is the question also here?", answer: "Suspendisse a tortor pharetra, egestas enim sit amet, semper libero. Mauris volutpat faucibus est sed luctus. Vivamus condimentum velit in efficitur ullamcorper." },
-    { question: "What is the question here also please?", answer: "Maecenas egestas dui eu massa imperdiet, non mollis dolor maximus. Mauris id consectetur magna. Integer dictum lobortis turpis quis semper." }
+    { question: "How can this program help me lose weight when I've tried so many diets without success?", answer: "Our personalised approach includes a health and lifestyle audit, tailored nutrition plans, and an intuitive eating system. With 1:1 support and weekly check-ins, we ensure lasting weight loss without obsessing over calories." },
+    { question: "I'm constantly dealing with injuries and niggles that disrupt my training. How can TWI Online help me train pain-free?", answer: "We address injury causes with personalised training programs and expert recovery guidance. Our comprehensive audit and direct coach communication help you train effectively and pain-free." },
+    { question: "I lack the structure and accountability to maintain a consistent fitness routine. How does TWI Online address this?", answer: "We provide structured, personalized coaching with weekly check-ins, an app for your programs, and regular coaching calls. Our system keeps you focused, motivated, and accountable." },
+    { question: "What makes TWI Online different from other online coaching programs?", answer: "TWI Online offers a fully bespoke 1-2-1 coaching experience with a focus on autonomy and lifelong habits. We provide comprehensive support and a community, ensuring personalised attention and sustainable results." },
+    { question: "How will Train With Intent help me optimise my health and longevity?", answer: "We educate you on training, nutrition, and lifestyle factors. Our personalised coaching helps you move efficiently and pain-free, promoting long-term health and performance excellence." }
   ];
 
   // Toggle the visibility of the answer

@@ -3,8 +3,9 @@ import React, {useState, useEffect, useRef} from 'react';
 
 import Header from "./components/Header"
 import Main from "./components/Main";
-import Statement from './components/Statement';
+// import Statement from './components/Statement';
 import Mission from './components/Mission';
+import Philosophy from './components/Philosophy';
 import About from './components/About';
 import Cta from './components/Cta';
 import Navbar from "./components/Navbar";
@@ -47,10 +48,9 @@ const App = () => {
       <Navbar isHeaderVisible={isHeaderVisible} />
       <Main />
       <Mission />
-      <Cta />
+      <Philosophy />
       <About />
       <Cta />
-      <Statement />
       <Video embedId={"g5ul2vH-aDs"} />  
       <Results />
       <FAQ />

@@ -14,7 +14,7 @@ const Results = () => {
 
   return (
     <div className="results_container">
-        <h1 className="results_title"><span className='transparent-outline'>Transformative Results</span></h1>
+        <h1 className="results_title"><span className='transparent-outline'>RESULTS</span></h1>
       <img 
         src="./images/results-image.jpg" 
         alt="" 
