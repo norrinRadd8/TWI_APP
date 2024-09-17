@@ -48,11 +48,11 @@ const App = () => {
       <Navbar isHeaderVisible={isHeaderVisible} />
       <Main />
       <Mission />
-      <Philosophy />
+      <Results />
       <About />
       <Cta />
-      <Video embedId={"g5ul2vH-aDs"} />  
-      <Results />
+      <Video embedId={"g5ul2vH-aDs"} /> 
+      <Philosophy />
       <FAQ />
     </div>
   );

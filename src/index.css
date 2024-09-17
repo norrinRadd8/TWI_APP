@@ -265,7 +265,6 @@
 .main_image {
   width: auto;
   position: absolute;
-  left: -408px;
 }
 
 .main_intro_text {
@@ -313,9 +312,10 @@
 }
 
 .mission_text {
-  font-size: 3.3em;
+  font-size: 3.1em;
   line-height: 1.5;
   text-align: center;
+  margin-top: 380px;
   
 }
 
@@ -633,16 +633,18 @@
 
 /* Styling for the introductory title */
 .results_title {
+  display: flex;
   font-size: 5.8rem;
   margin-top: 20px;
-  margin-left: 60px;
+  justify-content: center;
+  margin-bottom: 20px;
 }
 
 /* Styling for the introductory text */
 .results_text {
   font-size: 3.3rem;
   margin-bottom: 30px;
-  padding: 20px;
+  margin-left: 60px;
   color: #555;
 }
 
