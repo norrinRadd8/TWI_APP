@@ -1,5 +1,5 @@
 import React from 'react';
-import Cta from './Cta';
+import Cta2 from './Cta2';
 
 
 const Philosophy = () => {
@@ -34,7 +34,7 @@ const Philosophy = () => {
                 </div>
             </div>
             <div className='philosophy_cta'>
-            <Cta />
+            <Cta2 />
             </div>
             
         </div>

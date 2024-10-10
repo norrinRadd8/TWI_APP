@@ -5,15 +5,17 @@ import Header from "./components/Header"
 import Main from "./components/Main";
 // import Statement from './components/Statement';
 import Mission from './components/Mission';
-import Philosophy from './components/Philosophy';
+// import Cta from './components/Cta';
+import Results from './components/Results';
+// import Cta1 from './components/Cta1';
 import About from './components/About';
-import Cta from './components/Cta';
 import Navbar from "./components/Navbar";
 import Video from "./components/Video"; 
-import Results from './components/Results';
+import Philosophy from './components/Philosophy';
 import FAQ from './components/Faq';
-
+import Footer from './components/Footer';
 import "./index.css";
+
 
 const App = () => {
   const [isHeaderVisible, setIsHeaderVisible] = useState(true);
@@ -48,12 +50,14 @@ const App = () => {
       <Navbar isHeaderVisible={isHeaderVisible} />
       <Main />
       <Mission />
+      {/* <Cta /> */}
       <Results />
+      {/* <Cta1 /> */}
       <About />
-      <Cta />
       <Video embedId={"g5ul2vH-aDs"} /> 
       <Philosophy />
       <FAQ />
+      <Footer />
     </div>
   );
 }

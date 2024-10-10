@@ -1,4 +1,5 @@
 import React from 'react';
+import Cta from './Cta';
 
 const Mission = () => {
   return (
@@ -12,6 +13,7 @@ const Mission = () => {
         <p className="mission_text">
         At TRAIN<span className='transparent-outline-green'>WITH</span>INTENT online, our mission is to empower individuals to achieve peak performance and optimal health through bespoke, 1-2-1 online coaching. We are dedicated to helping professional athletes and fitness enthusiasts alike to move freely, efficiently, and pain-free, while pushing the boundaries of their physical capabilities and achieving long-lasting health and vitality.
         </p>
+        <Cta />
       </div>
       
     </div>

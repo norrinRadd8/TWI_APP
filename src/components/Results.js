@@ -1,5 +1,6 @@
 // Results.js
 import React from 'react';
+import Cta1 from '../components/Cta1';
 
 const Results = () => {
   const images = [
@@ -31,6 +32,7 @@ const Results = () => {
           </div>
         ))}
       </div>
+      <Cta1 />
     </div>
   );
 };
