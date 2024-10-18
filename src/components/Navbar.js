@@ -17,10 +17,11 @@ const NavBar = ({ isHeaderVisible }) => {
       </div>
       {isOpen && (
         <div className="dropdown-menu">
-          <a href="#section1">Section 1</a>
-          <a href="#section2">Section 2</a>
-          <a href="#section3">Section 3</a>
-          <a href="#section4">Section 4</a>
+          <a href="#results" onClick={toggleMenu}>RESULTS</a>
+          <a href="#about" onClick={toggleMenu}>ABOUT</a>
+          <a href="#testimonials" onClick={toggleMenu}>TESTIMONIALS</a>
+          <a href="#philosophy" onClick={toggleMenu}>PHILOSOPHY</a>
+          <a href="#faqs" onClick={toggleMenu}>FAQs</a>
         </div>
       )}
     </nav>
@@ -28,4 +29,3 @@ const NavBar = ({ isHeaderVisible }) => {
 };
 
 export default NavBar;
-

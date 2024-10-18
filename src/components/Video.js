@@ -2,6 +2,7 @@ import React from "react";
 
 const Video = ({ embedId }) => {
   return (
+    <section id="testimonials">
     <div className="video_container">
       <div className="video_content">
       <iframe
@@ -16,6 +17,7 @@ const Video = ({ embedId }) => {
       </div>
       
     </div>
+    </section>
   );
 };
 

@@ -4,6 +4,7 @@ import Cta2 from './Cta2';
 
 const Philosophy = () => {
     return (
+        <section id="philosophy">
         <div className="philosophy_container">
             <div className="philosophy_title">
                 <h2><span className='transparent-outline'>PHILOSOPHY</span></h2>
@@ -38,6 +39,7 @@ const Philosophy = () => {
             </div>
             
         </div>
+        </section>
     );
 };
 

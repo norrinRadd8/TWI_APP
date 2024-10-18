@@ -42,6 +42,7 @@
    font-family: 'Bebas Neue Pro', sans-serif;
    background-color: #000000; 
    color: var(--white);
+   scroll-behavior: smooth;
  }
 
  img {
@@ -416,10 +417,17 @@
   text-align: center;
 }
 
+.modal-content {
+  font-size: 1.5rem; /* Increase the font size for readability */
+  max-height: 70vh; /* Set max height for the modal content */
+  overflow-y: auto; /* Add vertical scrolling if content overflows */
+  padding: 20px;
+  line-height: 1.6; /* Adjust line height for better readability */
+}
+
 .learn-more-link {
   color: var(--white); 
   cursor: pointer;
-  text-decoration: underline; /* Underline to make it look like a link */
   border: none;
   background: none;
   padding: 0;
