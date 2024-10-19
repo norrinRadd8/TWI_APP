@@ -17,7 +17,7 @@ const Footer = () => {
                 </div> */}
                 <div className="footer_section">
                     <h4>Contact Us</h4>
-                    <p>Email: info@trainwintent.com</p>
+                    <p>info@trainwintent.com</p>
                 </div>
             </div>
             <div className="footer_social">
@@ -38,7 +38,7 @@ const Footer = () => {
                     <a href="/cookie-policy"> Cookie Policy</a> | 
                     <a href="/terms-conditions"> Terms & Conditions</a>
                 </p>
-                <p>Website designed and developed by HW Developer.</p>
+                {/* <p>Website designed and developed by HW Developer.</p> */}
             </div>
         </footer>
     );

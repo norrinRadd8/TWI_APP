@@ -54,7 +54,9 @@ const App = () => {
       <Results />
       {/* <Cta1 /> */}
       <About />
+      <Video embedId={"5OTyuhCEJ6I"} />
       <Video embedId={"g5ul2vH-aDs"} /> 
+      <Video embedId={"-jX1WplYrZU"} />
       <Philosophy />
       <FAQ />
       <Footer />
