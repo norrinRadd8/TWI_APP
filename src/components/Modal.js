@@ -12,7 +12,9 @@ const Modal = ({ show, handleClose, children }) => {
     return (
         <div className={showHideClassName} onClick={handleClickOutside}>
             <section className="modal-main">
-                <button className="close-button" onClick={handleClose}>X</button>
+            <button className="close-button" onClick={handleClose}>
+                    &#8617; {/* This is the HTML entity for a left arrow */}
+                </button>
                 {children}
             </section>
         </div>
