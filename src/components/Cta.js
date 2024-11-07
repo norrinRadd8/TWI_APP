@@ -24,9 +24,11 @@ const Cta = () => {
 
   return (
     <div className='cta_container'>
+      <a href="https://kahunas.io/form/nxr319">
         <button className="cta_button" onClick={createRipple}>
       BEGIN YOUR JOURNEY
     </button>
+    </a>
     </div>
     
   );
