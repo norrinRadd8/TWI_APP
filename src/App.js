@@ -1,7 +1,7 @@
 
 import React, {useState, useEffect, useRef} from 'react';
 
-import Header from "./components/Header"
+// import Header from "./components/Header"
 import Main from "./components/Main";
 // import Statement from './components/Statement';
 import Mission from './components/Mission';
@@ -45,7 +45,7 @@ const App = () => {
   return (
     <div className="app_container">
       <div ref={headerRef}>
-        <Header />
+        {/* <Header /> */}
       </div>
       <Navbar isHeaderVisible={isHeaderVisible} />
       <Main />

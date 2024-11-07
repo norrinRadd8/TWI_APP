@@ -142,10 +142,10 @@
 }
 
 .header_logo {
-  position: absolute;
+  /* position: absolute; */
   z-index: 10;
-  margin-top: 768px;
-  padding-left: 90px;
+  /* margin-top: 768px; */
+  /* padding-left: 90px; */
 }
 
 .intro_text {
@@ -250,9 +250,8 @@
 
 /* MAIN */
 
-.main_container {
-  position: relative;
-  margin-bottom: 1200px;
+/* .main_container {
+  
 }
 
 .image_container::before {
@@ -267,17 +266,14 @@
 }
 
 .main_image {
-  width: auto;
-  position: absolute;
+  width: 100%;
+  
 }
 
 .main_intro_text {
   display: flex;
   justify-content: center;
   text-align: justify;
-  position: absolute;
-  margin-left: 110px;
-  margin-top: 863px;
   color: white;
   font-size: 40px;
   z-index: 2;
@@ -292,12 +288,73 @@
   margin-top: 10px;
   font-size: 50px;
   line-height: 1.5;
+} */
+
+/* Container for the image and overlay content */
+.main_container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+.main_image_container {
+  position: relative;
+  width: 100%;
+  max-width: 1200px; /* Adjust as needed */
+  overflow: hidden;
+}
+
+.main_image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Position the overlay content in the center of the image */
+.overlay_content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: white;
+  z-index: 2; /* Ensures the overlay content is above the image */
+}
+
+.header_logo {
+  width: 650px; /* Adjust size as needed */
+  margin-bottom: 10px;
+}
+
+.main_intro_text p {
+  font-size: 1.75rem;
+  font-weight: bold;
+  line-height: 1.4;
+  color: white;
+  margin: 0;
+}
+
+/* Optional: Add a dark overlay for better text visibility */
+.main_image_container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.1); 
+  z-index: 1; /* Ensure overlay appears between image and content */
+}
+
 
 /* MISSION */
 
 .mission_container {
-  display: flex;
+  /* display: flex; */
   flex-direction: column; 
 }
 
@@ -315,9 +372,9 @@
 
 .mission_text {
   font-size: 4em;
-  line-height: 1.5;
-  margin-top: 380px;
-  padding: 60px 30px;
+  /* line-height: 1.1; */
+  /* margin-top: 380px; */
+  padding: 0px 30px;
   
 }
 
@@ -358,7 +415,7 @@
 }
 
 .results_text {
-  font-size: 3.3rem;
+  font-size: 4em;
   margin-right: 60px;
   margin-left: 60px;
   padding: 60px 30px;
@@ -456,6 +513,12 @@
   padding-top: 60px;
 }
 
+.about_image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 .about_title {
   font-size: 5.8rem;
   padding-top: 60px;
@@ -464,11 +527,8 @@
 
 .about_text {
   display: flex;
-  padding: 30px 60px;
-  margin-left: 120px;
-  margin-right: 120px;
-  font-size: 3.3rem; 
-  line-height: 1.5;
+  padding: 0px 60px;
+  font-size: 4em; 
   margin-bottom: 60px; 
   text-align: center;
 }
