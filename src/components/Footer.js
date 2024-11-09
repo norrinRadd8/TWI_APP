@@ -16,7 +16,6 @@ const Footer = () => {
                     </p>
                 </div> */}
                 <div className="footer_section">
-                    <h4>Contact Us</h4>
                     <p>info@twicoaching.com</p>
                 </div>
             </div>
