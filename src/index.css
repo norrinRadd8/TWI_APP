@@ -566,19 +566,20 @@
 
 .philosophy_image {
   display: flex;
-  width: 200px;
-  /* height: 240px;
+  width: 300px;
   justify-content: center;
-  align-items: center; */
+  height: 300px;
+  align-items: center; 
 }
 
 .philosophy_content {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  /* align-items: center;
   gap: 120px;
-  margin-top: 90px;
+  margin-top: 90px; */
   /* color: #787878;  */
+  text-align: center;
 }
 
 .philosophy_content p {
@@ -644,8 +645,7 @@
 }
 
 .about_icon {
-  width: 120px;
-  height: 120px;
+  height: 300px;
 }
 
 /* .about_image {
@@ -672,7 +672,7 @@
   display: flex;
   justify-content: center;
   font-size: 1.4rem;
-  margin-bottom: 30px;
+  margin-bottom: 60px;
 }
 
 .learn-more-link {

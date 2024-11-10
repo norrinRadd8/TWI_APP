@@ -18,7 +18,7 @@ const About = () => {
         <div className="about_container">
             <div className="about_content">
                 <div className="about_images">
-                    <img src="./images/fitness.svg" alt="fitness_icon" className="about_icon" />
+                    <img src="./images/coach1.jpg" alt="fitness_icon" className="about_icon" />
                 </div>
                 {/* <h2 className="about_title"><span className='transparent-outline'>ALEX ELVY</span></h2> */}
                 
@@ -27,7 +27,7 @@ const About = () => {
                     
                 </p>
                <div className='about_button'>
-               <p><button className="learn-more-link" onClick={handleOpenModal}>LEARN MORE</button></p> 
+               <p><button className="learn-more-link, cta_button" onClick={handleOpenModal}>LEARN MORE</button></p> 
                </div>
                               
                 
