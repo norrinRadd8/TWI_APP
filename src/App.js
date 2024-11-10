@@ -9,6 +9,8 @@ import Mission from './components/Mission';
 import Results from './components/Results';
 // import Cta1 from './components/Cta1';
 import About from './components/About';
+// import Line from './components/Line';
+// import Coach1 from './components/Coach1';
 import Navbar from "./components/Navbar";
 import Quote from './components/Quote';
 import Video from "./components/Video"; 
@@ -54,6 +56,8 @@ const App = () => {
       <Main />
       <Mission />
       <About />
+      {/* <Coach1 /> */}
+      {/* <Line /> */}
       <Philosophy />
       <Online />
       {/* <Cta /> */}
