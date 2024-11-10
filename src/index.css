@@ -357,18 +357,18 @@
 /* Responsive Logo Sizing */
 .header_logo {       
   max-width: 18rem;   
-  height: auto;       /* Maintain aspect ratio */
-  margin-bottom: 10px;
+  height: auto;     
+  margin-top: 200px;
 }
 
 /* Main Intro Text Styling */
 .main_intro_text p {
-  font-size: 0.8rem;
+  font-size: 0.6rem;
   font-weight: bold;
   line-height: 1.4;
   color: white;
   margin: 0;
-  padding: 0 20px;    /* Adds padding for readability on smaller screens */
+  padding: 10px 20px;    /* Adds padding for readability on smaller screens */
 }
 
 /* Dark Overlay for Better Contrast */
@@ -417,7 +417,7 @@
 
 .mission_content {
   flex: 1;
-  padding: 30px;
+  padding: 60px 30px;
 }
 
 .mission_title {
@@ -429,9 +429,10 @@
 
 .mission_text {
   font-size: 1.4em;
+  text-align: center;
   /* line-height: 1.1; */
   /* margin-top: 380px; */
-  padding: 0px 5px;
+  /* padding: 0px 5px; */
   
 }
 
@@ -459,9 +460,7 @@
 /* RESULTS */
 
 .results_container {
-  /* max-width: 1200px;
-  margin: 0 auto; */
-  /* padding-top: 60px; */
+  padding-bottom: 60px;
   
 }
 
@@ -469,7 +468,7 @@
   display: flex;
   font-size: 3.4rem;
   justify-content: center;
-  padding-bottom: 30px;
+  padding-top: 60px;
 }
 
 .results_text {
@@ -521,16 +520,29 @@
 
 .philosophy_container {
   padding: 30px;
-  background-color: var(--black);
+  
 }
 
 .philosophy_title {
   text-align: center;
 }
 
+.philosophy_title p {
+  font-size: 1.4rem;
+}
+
+
 .philosophy_title h2 {
   font-size: 3.4rem;
   
+}
+
+.philosophy_image {
+  display: flex;
+  width: 200px;
+  /* height: 240px;
+  justify-content: center;
+  align-items: center; */
 }
 
 .philosophy_content {
@@ -539,7 +551,7 @@
   align-items: center;
   gap: 120px;
   margin-top: 90px;
-  color: #787878; 
+  /* color: #787878;  */
 }
 
 .philosophy_content p {
@@ -548,9 +560,9 @@
 
 .philosophy_feature {
   margin: 10px 0;
-  text-align: center;
+  /* text-align: center;
   font-size: 38px;
-  color: #787878; 
+  color: #787878;  */
 }
 
 .philosophy_feature h3 {
@@ -564,6 +576,31 @@
   margin-top: 50px;
 }
 
+/* ONLINE */
+
+.online-container {
+  position: relative;
+  width: 100%;
+  max-width: 800px; /* adjust max-width as needed */
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 0 20px;
+}
+
+.image-wrapper {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%; /* Maintain 16:9 aspect ratio */
+}
+
+.online-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+}
 
 /* ABOUT */
 
@@ -574,11 +611,23 @@
   padding-top: 60px;
 }
 
-.about_image {
+.about_images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.about_icon {
+  width: 120px;
+  height: 120px;
+}
+
+/* .about_image {
   width: 100%;
   height: auto;
   display: block;
-}
+} */
 
 .about_title {
   font-size: 3.4rem;
@@ -590,14 +639,14 @@
   display: flex;
   padding: 0px 30px;
   font-size: 1.4rem; 
-  margin-bottom: 60px; 
+  margin-bottom: 30px; 
   text-align: center;
 }
 
 .about_button {
   display: flex;
   justify-content: center;
-  font-size: 2.4rem;
+  font-size: 1.4rem;
   margin-bottom: 30px;
 }
 
@@ -630,6 +679,61 @@
   z-index: 2;
 } */
 
+/* QUOTE */
+
+.quote-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.quote-title {
+  font-size: 1.8rem;
+  color: #333;
+  margin-top: 60px;
+  margin-bottom: -30px; /* Space between title and quote */
+}
+
+.quote-container {
+  position: relative;
+  width: 100%;
+  max-width: 500px; /* Set max width for better layout on larger screens */
+  height: 300px; /* Adjust height as needed */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('../public/images/insta.png'); /* Path to your image */
+  background-size: 150px; /* Adjust size as needed */
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  padding: 20px;
+  overflow: hidden;
+  border-radius: 8px; /* Optional rounded corners */
+}
+
+/* Dark overlay */
+.quote-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Darken the background */
+  z-index: 1;
+}
+
+.quote-text {
+  position: relative;
+  z-index: 2; /* Ensures the quote text appears above the overlay */
+  max-width: 80%;
+}
 
 /* VIDEO */
 
@@ -761,6 +865,33 @@
 
 } */
 
+
+/* COACH */
+
+.coach-container {
+  position: relative;
+  width: 100%;
+  max-width: 800px; /* adjust max-width as needed */
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 0 20px;
+}
+
+.image-wrapper {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%; /* Maintain 16:9 aspect ratio */
+}
+
+.coach-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+}
+
 /* FAQ */
 .faq_container {
   max-width: 800px;
@@ -848,7 +979,7 @@
 }
 
 .footer_section p {
-  font-size: 2.4rem;
+  font-size: 1.4rem;
   color: #ccc;
   line-height: 1.6;
   

@@ -10,8 +10,11 @@ import Results from './components/Results';
 // import Cta1 from './components/Cta1';
 import About from './components/About';
 import Navbar from "./components/Navbar";
+import Quote from './components/Quote';
 import Video from "./components/Video"; 
 import Philosophy from './components/Philosophy';
+import Online from './components/Online';
+import Coach from './components/Coach';
 import FAQ from './components/Faq';
 import Footer from './components/Footer';
 import "./index.css";
@@ -50,14 +53,18 @@ const App = () => {
       <Navbar isHeaderVisible={isHeaderVisible} />
       <Main />
       <Mission />
-      {/* <Cta /> */}
-      <Results />
-      {/* <Cta1 /> */}
       <About />
+      <Philosophy />
+      <Online />
+      {/* <Cta /> */}
+      
+      {/* <Cta1 /> */}
+      <Quote />
       <Video embedId={"5OTyuhCEJ6I"} />
       <Video embedId={"g5ul2vH-aDs"} /> 
       <Video embedId={"-jX1WplYrZU"} />
-      <Philosophy />
+      <Results />
+      <Coach />
       <FAQ />
       <Footer />
     </div>

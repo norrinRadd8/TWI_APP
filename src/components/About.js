@@ -18,9 +18,9 @@ const About = () => {
         <div className="about_container">
             <div className="about_content">
                 <div className="about_images">
-                    <img src="./images/alex.jpg" alt="Alex" className="about_image" />
+                    <img src="./images/fitness.svg" alt="fitness_icon" className="about_icon" />
                 </div>
-                <h2 className="about_title"><span className='transparent-outline'>ALEX ELVY</span></h2>
+                {/* <h2 className="about_title"><span className='transparent-outline'>ALEX ELVY</span></h2> */}
                 
                 <p className="about_text">
                     Alex Elvy is a seasoned strength and conditioning coach specialising in working with professional athletes, particularly in the realms of boxing and football. As a dedicated coach, Alex channels his expertise and passion into driving elite performance, guiding athletes towards their peak physical capabilities.
