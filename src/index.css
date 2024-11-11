@@ -319,13 +319,6 @@
 } */
 
 /* Container for the image and overlay content */
-/* Main Container Styling */
-.main_container {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
 .main_image_container {
   /* position: relative;
@@ -334,13 +327,19 @@
   overflow: hidden; */
 }
 
+/* Main Container Styling */
+.main_container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .main_image {
   width: 100%;
-  /* height: auto; */
   display: flex;
 }
 
-/* Overlay Content Centered in the Image */
 .overlay_content {
   position: absolute;
   top: 50%;
@@ -354,24 +353,22 @@
   z-index: 2;
 }
 
-/* Responsive Logo Sizing */
 .header_logo {       
   max-width: 18rem;   
   height: auto;     
   margin-top: 200px;
 }
 
-/* Main Intro Text Styling */
+
 .main_intro_text p {
   font-size: 0.6rem;
   font-weight: bold;
   line-height: 1.4;
   color: white;
   margin: 0;
-  padding: 10px 20px;    /* Adds padding for readability on smaller screens */
+  padding: 10px 20px;    
 }
 
-/* Dark Overlay for Better Contrast */
 .main_image_container::before {
   content: "";
   position: absolute;
@@ -383,8 +380,29 @@
   z-index: 1;
 }
 
-/* Media Query for Smaller Screens */
 @media (min-width: 768px) {
+  .main_image {
+    /* height: calc(100vw / 1.777);  */
+  }
+
+  .header_logo {
+    max-width: 24rem; /* Larger logo for bigger screens */
+    margin-top: 100px;
+  }
+
+  .main_intro_text p {
+    font-size: 1rem; /* Increase font size */
+    padding: 20px 40px;
+  }
+
+  .main_image_container::before {
+    background: rgba(0, 0, 0, 0.3); /* Darker overlay */
+  }
+}
+
+
+
+/* @media (min-width: 768px) {
 
   .overlay_content {
     margin-bottom: -1200px;
@@ -398,14 +416,14 @@
   }
 
   .header_logo {
-    width: 60%;       /* Larger percentage on smaller screens */
-    max-width: 300px; /* Further limit width for small screens */
+    width: 60%;       
+    max-width: 300px; 
   }
   
   .main_intro_text p {
-    font-size: 1.2rem; /* Adjust text size for readability on mobile */
+    font-size: 1.2rem; 
   }
-}
+} */
 
 
 /* MISSION */
@@ -502,7 +520,6 @@
   margin-right: 30px;
   margin-left: 30px;
   padding: 6px 5px;
-  color: #555;
   text-align: center;
 }
 
@@ -583,7 +600,7 @@
 }
 
 .philosophy_content p {
-  font-size: 1.9rem;
+  font-size: 1.6rem;
 }
 
 .philosophy_feature {
@@ -1044,14 +1061,14 @@
 }
 
 .footer_social a {
-  color: #ccc;
+  color: var(--green);
   margin: 0 10px;
   font-size: 2.3em;
   transition: color 0.3s;
 }
 
 .footer_social a:hover {
-  color: var(--green);
+  color: var(--white);
 }
 
 .footer_bottom {

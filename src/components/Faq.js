@@ -23,7 +23,7 @@ const FAQ = () => {
     <section id="faqs">
     <div className="faq_container">
         <div className="faq_content">
-        <h2 className="faq_title"><span className='transparent-outline'>FAQs</span></h2>
+        <h2 className="faq_title"><span className='transparent-outline-green'>FAQs</span></h2>
         {faqs.map((faq, index) => (
         <div key={index} className="faq_item">
           <div className="faq_question" onClick={() => handleToggle(index)}>

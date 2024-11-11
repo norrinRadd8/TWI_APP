@@ -16,7 +16,7 @@ const Results = () => {
   return (
     <section id="results">
     <div className="results_container">
-        <h1 className="results_title"><span className='transparent-outline'>RESULTS</span></h1>
+        <h1 className="results_title"><span className='transparent-outline-green'>RESULTS</span></h1>
       <p className="results_text">
         Experience the transformation with our cutting-edge solutions. Our approach ensures that you achieve the results you desire.
       </p>
