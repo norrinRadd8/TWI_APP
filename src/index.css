@@ -29,12 +29,12 @@
 @media (min-width: 768px) {
   ::-webkit-scrollbar {
     display: block;
-    width: 8px; /* Adjust scrollbar width as needed */
+    width: 8px; 
   }
 
   ::-webkit-scrollbar-thumb {
-    background-color: var(--green); /* Scrollbar thumb color */
-    border-radius: 4px; /* Optional: Rounding edges of scrollbar */
+    background-color: var(--green); 
+    border-radius: 4px; 
   }
 
   ::-webkit-scrollbar-track {
@@ -147,10 +147,6 @@
   
 }
 
-/* .header_logo {
-  z-index: 10; 
-} */
-
 .intro_text {
   display: flex;
   font-family: 'Bebas Neue Pro', sans-serif;
@@ -159,17 +155,8 @@
   margin: 10px;
 }
 
-/* Reset global box-sizing for consistent layout */
-/* *,
-*::before,
-*::after {
-  box-sizing: border-box;
-} */
-
-
-
-
 /* NAVBAR */
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -291,59 +278,8 @@
   }
 }
 
-
 /* MAIN */
 
-/* .main_container {
-  
-}
-
-.image_container::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.3); 
-  z-index: 1;
-}
-
-.main_image {
-  width: 100%;
-  
-}
-
-.main_intro_text {
-  display: flex;
-  justify-content: center;
-  text-align: justify;
-  color: white;
-  font-size: 40px;
-  z-index: 2;
-  background-color: rgba(0, 0, 0, 0.3);
-}
-
-.main_header {
-  margin: 0;
-}
-
-.main_paragraph {
-  margin-top: 10px;
-  font-size: 50px;
-  line-height: 1.5;
-} */
-
-/* Container for the image and overlay content */
-
-.main_image_container {
-  /* position: relative;
-  width: 100%;
-  max-width: 1200px; 
-  overflow: hidden; */
-}
-
-/* Main Container Styling */
 .main_container {
   position: relative;
   display: flex;
@@ -375,7 +311,6 @@
   margin-top: 200px;
 }
 
-
 .main_intro_text p {
   font-size: 0.6rem;
   font-weight: bold;
@@ -402,45 +337,19 @@
   }
 
   .header_logo {
-    max-width: 24rem; /* Larger logo for bigger screens */
+    max-width: 24rem; 
     margin-top: 100px;
   }
 
   .main_intro_text p {
-    font-size: 1rem; /* Increase font size */
+    font-size: 1rem; 
     padding: 20px 40px;
   }
 
   .main_image_container::before {
-    background: rgba(0, 0, 0, 0.3); /* Darker overlay */
+    background: rgba(0, 0, 0, 0.3); 
   }
 }
-
-
-
-/* @media (min-width: 768px) {
-
-  .overlay_content {
-    margin-bottom: -1200px;
-  }
-
-
-  .main_image_container {
-    display: flex;
-    width: 100%;
-    max-width: 100%;
-  }
-
-  .header_logo {
-    width: 60%;       
-    max-width: 300px; 
-  }
-  
-  .main_intro_text p {
-    font-size: 1.2rem; 
-  }
-} */
-
 
 /* MISSION */
 
@@ -473,13 +382,13 @@
   }
 
   .mission_title {
-    font-size: 6.5em; /* Larger font size for title on larger screens */
-    text-align: left;  /* Optional: Align text to the left for a more desktop-friendly layout */
+    font-size: 6.5em; 
+    text-align: left; 
   }
 
   .mission_text {
-    font-size: 1.8em; /* Larger font size for mission text */
-    text-align: center;  /* Optional: Align text to the left */
+    font-size: 1.8em; 
+    text-align: center;  
   }
 }
 
@@ -497,7 +406,7 @@
 .image-wrapper {
   position: relative;
   width: 100%;
-  padding-top: 56.25%; /* Maintain 16:9 aspect ratio */
+  padding-top: 56.25%; 
 }
 
 .coach1-image {
@@ -555,30 +464,17 @@
   object-fit: cover; 
 }
 
-/* Ensure responsiveness */
-/* @media (max-width: 768px) {
-  .results_image_container {
-    width: calc(50% - 20px); 
-  }
-}
-
-@media (max-width: 480px) {
-  .results_image_container {
-    width: 100%; 
-  }
-} */
-
 @media (min-width: 768px) {
   .image_grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 3 equal-width columns */
-    grid-auto-rows: auto; /* Fixed height for each row */
-    gap: 20px; /* Space between items */
+    grid-template-columns: repeat(4, 1fr); 
+    grid-auto-rows: auto; 
+    gap: 20px; 
     padding: 60px 30px;
   }
 
   .results_image_container {
-    height: 100%; /* Fill the grid cell height */
+    height: 100%; 
   }
 
 }
@@ -616,10 +512,6 @@
 .philosophy_content {
   display: flex;
   flex-direction: column;
-  /* align-items: center;
-  gap: 120px;
-  margin-top: 90px; */
-  /* color: #787878;  */
   text-align: center;
 }
 
@@ -712,9 +604,6 @@
   height: 300px;
 }
 
-
-
-
 .about_title {
   font-size: 3.4rem;
   padding: 30px;
@@ -763,22 +652,6 @@
   }
 
 }
-/* LINE */
-
-/* .line-container {
-  position: relative;
-  width: 100%;
-  max-width: 800px; 
-  margin: 0 auto;
-  overflow: hidden;
-  padding: 0 20px;
-}
-
-.image-wrapper {
-  position: relative;
-  width: 100%;
-  padding-top: 56.25%; 
-}
 
 .line-image {
   position: absolute;
@@ -790,23 +663,15 @@
 } */
 
 .modal-content {
-  font-size: 1.4rem; /* Increase the font size for readability */
-  max-height: 70vh; /* Set max height for the modal content */
-  overflow-y: auto; /* Add vertical scrolling if content overflows */
-  /* padding: 20px; */
-  line-height: 1.6; /* Adjust line height for better readability */
+  font-size: 1.4rem; 
+  max-height: 70vh; 
+  overflow-y: auto; 
+  line-height: 1.6; 
 }
-
-
 
 .learn-more-link:hover {
-  color: var(--green); /* Hover effect for better UX */
+  color: var(--green); 
 }
-
-/* .cta_about {
-  position: absolute;
-  z-index: 2;
-} */
 
 /* QUOTE */
 
@@ -822,19 +687,19 @@
   font-size: 1.8rem;
   color: #333;
   margin-top: 60px;
-  margin-bottom: -30px; /* Space between title and quote */
+  margin-bottom: -30px;
 }
 
 .quote-container {
   position: relative;
   width: 100%;
-  max-width: 500px; /* Set max width for better layout on larger screens */
-  height: 300px; /* Adjust height as needed */
+  max-width: 500px; 
+  height: 300px; 
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url('../public/images/insta.png'); /* Path to your image */
-  background-size: 150px; /* Adjust size as needed */
+  background-image: url('../public/images/insta.png'); 
+  background-size: 150px; 
   background-position: center;
   background-repeat: no-repeat;
   color: #fff;
@@ -843,7 +708,7 @@
   text-align: center;
   padding: 20px;
   overflow: hidden;
-  border-radius: 8px; /* Optional rounded corners */
+  border-radius: 8px; 
 }
 
 /* Dark overlay */
@@ -854,13 +719,13 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5); /* Darken the background */
+  background-color: rgba(0, 0, 0, 0.5); 
   z-index: 1;
 }
 
 .quote-text {
   position: relative;
-  z-index: 2; /* Ensures the quote text appears above the overlay */
+  z-index: 2; 
   max-width: 80%;
 }
 
@@ -946,80 +811,12 @@
   background-color: #ffffff;
 }
 
-/* STATEMENT
-
-.statement-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 5vh;
-  background-color: #000000;
-  padding: 80px;
-  
-}
-
-.statement-text {
-  font-size: 4rem;
-  font-weight: bold;
-  text-align: center;
-  color: #FFFFFF; 
-  transition: opacity 1s ease;
-}
-
-.hidden {
-  opacity: 0; 
-}
-
-@keyframes scaleUpFadeOut {
-  0% {
-    transform: scale(0.5);
-    opacity: 1;
-  }
-  100% {
-    transform: scale(1.5);
-    opacity: 0;
-  }
-}
-
-@keyframes fadeOut {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-@keyframes shudder {
-  0% { transform: translate(0, 0); }
-  10% { transform: translate(-3px, -3px); }
-  20% { transform: translate(3px, 3px); }
-  30% { transform: translate(-3px, -3px); }
-  40% { transform: translate(3px, 3px); }
-  50% { transform: translate(-3px, 3px); }
-  60% { transform: translate(3px, -3px); }
-  70% { transform: translate(-3px, 3px); }
-  80% { transform: translate(3px, -3px); }
-  90% { transform: translate(-3px, -3px); }
-  100% { transform: translate(0, 0); }
-}
-
-.scale-up-fade-out {
-  animation: scaleUpFadeOut 2s forwards;
-}
-
-.shudder {
-  animation: shudder 0.5s;
-
-} */
-
-
 /* COACH */
 
 .coach-container {
   position: relative;
   width: 100%;
-  max-width: 800px; /* adjust max-width as needed */
+  max-width: 800px; 
   margin: 0 auto;
   overflow: hidden;
   padding: 0 20px;
@@ -1028,7 +825,7 @@
 .image-wrapper {
   position: relative;
   width: 100%;
-  padding-top: 56.25%; /* Maintain 16:9 aspect ratio */
+  padding-top: 56.25%; 
 }
 
 .coach-image {
