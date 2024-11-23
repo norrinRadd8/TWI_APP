@@ -1,20 +1,14 @@
 // Footer.js
 import React from 'react';
-import { FaInstagram } from 'react-icons/fa'; // Install react-icons if not already installed
-
+import { FaInstagram } from 'react-icons/fa'; 
 const Footer = () => {
     return (
+        <section id="footer">
         <footer className="footer_container">
             <div className="footer_logo">
                 <img src="./images/logo-stacked.png" alt="Company Logo" className="logo" />
             </div>
             <div className="footer_content">
-                {/* <div className="footer_section">
-                    <h4>About Us</h4>
-                    <p>
-                        We are dedicated to delivering high-quality services and resources for our clients. Our mission is to provide excellence in everything we do, supporting athletes and fitness enthusiasts across the UK.
-                    </p>
-                </div> */}
                 <div className="footer_section">
                     <p>info@twicoaching.com</p>
                 </div>
@@ -32,9 +26,10 @@ const Footer = () => {
                     <a href="/cookie-policy"> Cookie Policy</a> | 
                     <a href="/terms-conditions"> Terms & Conditions</a>
                 </p>
-                {/* <p>Website designed and developed by HW Developer.</p> */}
+                {/* <p>Produced by HW Developer.</p> */}
             </div>
         </footer>
+        </section>
     );
 };
 

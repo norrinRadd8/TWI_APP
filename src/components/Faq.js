@@ -2,10 +2,8 @@
 import React, { useState } from 'react';
 
 const FAQ = () => {
-  // State to track the currently opened question
   const [openIndex, setOpenIndex] = useState(null);
 
-  // Questions and answers
   const faqs = [
     { question: "How can this program help me lose weight when I've tried so many diets without success?", answer: "Our personalised approach includes a health and lifestyle audit, tailored nutrition plans, and an intuitive eating system. With 1:1 support and weekly check-ins, we ensure lasting weight loss without obsessing over calories." },
     { question: "I'm constantly dealing with injuries and niggles that disrupt my training. How can TWI Online help me train pain-free?", answer: "We address injury causes with personalised training programs and expert recovery guidance. Our comprehensive audit and direct coach communication help you train effectively and pain-free." },
@@ -14,7 +12,6 @@ const FAQ = () => {
     { question: "How will Train With Intent help me optimise my health and longevity?", answer: "We educate you on training, nutrition, and lifestyle factors. Our personalised coaching helps you move efficiently and pain-free, promoting long-term health and performance excellence." }
   ];
 
-  // Toggle the visibility of the answer
   const handleToggle = (index) => {
     setOpenIndex(openIndex === index ? null : index);
   };

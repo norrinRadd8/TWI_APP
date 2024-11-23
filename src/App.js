@@ -1,16 +1,9 @@
 
 import React, {useState, useEffect, useRef} from 'react';
-
-// import Header from "./components/Header"
 import Main from "./components/Main";
-// import Statement from './components/Statement';
 import Mission from './components/Mission';
-// import Cta from './components/Cta';
 import Results from './components/Results';
-// import Cta1 from './components/Cta1';
 import About from './components/About';
-// import Line from './components/Line';
-// import Coach1 from './components/Coach1';
 import Navbar from "./components/Navbar";
 import Quote from './components/Quote';
 import Video from "./components/Video"; 
@@ -56,13 +49,8 @@ const App = () => {
       <Main />
       <Mission />
       <About />
-      {/* <Coach1 /> */}
-      {/* <Line /> */}
       <Philosophy />
       <Online />
-      {/* <Cta /> */}
-      
-      {/* <Cta1 /> */}
       <Quote />
       <Video embedId={"5OTyuhCEJ6I"} />
       <Video embedId={"g5ul2vH-aDs"} /> 
