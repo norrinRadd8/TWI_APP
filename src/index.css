@@ -547,6 +547,19 @@
     padding: 30px;
   }
 
+  .philosophy_feature h3 {
+    font-size: 2.0rem;
+  }
+
+  .philosophy_image {
+    width: 150px;
+    height: 150px;
+  }
+
+  .philosophy_content p {
+    font-size: 1.2rem;
+  }
+
   .philosophy_title p {
     padding-bottom: 30px;
   }
@@ -672,8 +685,10 @@
   }
 
   .video_container iframe {
-    width: 100%;
-    height: revert-layer;    
+    width: 90%;
+    height: revert-layer; 
+    display: flex;
+    margin: 0 auto;   
   } 
 }
 
