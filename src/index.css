@@ -71,40 +71,50 @@
 
 /* MODAL */
 
+
 .modal {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: transparent;
+  background-color: rgba(0, 0, 0, 0.9);
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 1000;
+  opacity: 0; /* Start hidden */
+  visibility: hidden; /* Ensure it's not interactable */
+  transition: opacity 0.5s ease, visibility 0.5s ease; /* Smooth fade effect */
 }
 
 .modal-main {
   background: black;
-    border: 2px solid var(--green);
-    padding: 40px 30px;
-    width: 80%;
-    max-width: 800px;
-    max-height: 95%;
-    overflow-y: auto;
-    position: relative;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  border: 2px solid var(--green);
+  padding: 30px;
+  width: 80%;
+  max-width: 800px;
+  max-height: 80%;
+  overflow-y: auto;
+  position: relative;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.modal.show {
+  opacity: 1; /* Fully visible */
+  visibility: visible; /* Enable interaction */
 }
 
 .display-block {
   display: flex;
+  opacity: 1;
 }
 
 .display-none {
   display: none;
 }
 
-.close-button {
+/* .close-button {
   background: none;
   border: none;
   font-size: 1.4em;
@@ -115,6 +125,34 @@
   cursor: pointer;
   color: var(--green);
   padding: 14px;
+} */
+
+.close-button {
+  position: absolute; /* Position it relative to .modal-main */
+  top: 5%; /* Place it above the modal */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Adjust to align the center of the button */
+  width: 40px; /* Make it a perfect circle */
+  height: 40px;
+  background-color: transparent;
+  border: 2px solid var(--green);
+  border-radius: 50%; 
+  font-size: 1.2em;
+  font-weight: bold;
+  display: flex; /* Center the cross within the circle */
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: var(--green);
+  padding: 10px;
+  z-index: 1100;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.close-button:hover {
+  transform: translateX(-50%) scale(1.1); /* Slightly enlarge on hover */
+  background-color: #ff4d4d; /* Change background color on hover */
 }
 
  /* TRANSPARENT OUTLINES */
@@ -651,22 +689,6 @@
     text-align: left;
   }
 
-}
-
-.line-image {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover; 
-} */
-
-.modal-content {
-  font-size: 1.4rem; 
-  max-height: 70vh; 
-  overflow-y: auto; 
-  line-height: 1.6; 
 }
 
 .learn-more-link:hover {
