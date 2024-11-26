@@ -12,6 +12,7 @@ import Online from './components/Online';
 import Coach from './components/Coach';
 import FAQ from './components/Faq';
 import Footer from './components/Footer';
+import Privacy from './components/Privacy';
 import "./index.css";
 
 
@@ -59,6 +60,7 @@ const App = () => {
       <Coach />
       <FAQ />
       <Footer />
+      <Privacy />
     </div>
   );
 }

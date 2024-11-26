@@ -104,6 +104,22 @@
   visibility: visible;
 }
 
+.modal a {
+  color: var(--green); 
+  text-decoration: underline; 
+}
+
+
+.modal a:hover {
+  color: var(--charcoal); 
+  text-decoration: underline; 
+}
+
+
+.modal a:active {
+  color: var(--charcoal); 
+}
+
 .display-block {
   display: flex;
   opacity: 1;
