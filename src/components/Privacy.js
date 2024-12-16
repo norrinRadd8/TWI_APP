@@ -1,5 +1,5 @@
 import React from "react";
-import Modal from "./Modal"; // Import the Modal component
+import Modal from "./Modal";
 
 const Privacy = ({ showModal, handleCloseModal }) => {
   return (
@@ -153,11 +153,4 @@ const Privacy = ({ showModal, handleCloseModal }) => {
 
 export default Privacy;
 
-//<a href ="https://ico.org.uk/for-organisations/advice-for-small-organisations/create-your-own-privacy-notice/your-data-protection-rights/#roa">You can read more about this right here.</a>
-//<a href = "https://ico.org.uk/for-organisations/advice-for-small-organisations/create-your-own-privacy-notice/your-data-protection-rights/#rtr">You can read more about this right here.</a>
-// <a href ="https://ico.org.uk/for-organisations/advice-for-small-organisations/create-your-own-privacy-notice/your-data-protection-rights/#rte">You can read more about this right here.</a>
-// <a href = "https://ico.org.uk/for-organisations/advice-for-small-organisations/create-your-own-privacy-notice/your-data-protection-rights/#rtrop">You can read more about this right here.</a>
-// <a href = "https://ico.org.uk/for-organisations/advice-for-small-organisations/create-your-own-privacy-notice/your-data-protection-rights/#rto">You can read more about this right here.</a>
-// <a href = "https://ico.org.uk/for-organisations/advice-for-small-organisations/create-your-own-privacy-notice/your-data-protection-rights/#rtdp">You can read more about this right here.</a>
-// <a href = "https://ico.org.uk/for-organisations/advice-for-small-organisations/create-your-own-privacy-notice/your-data-protection-rights/#rtwc">You can read more about this right here.</a>
 

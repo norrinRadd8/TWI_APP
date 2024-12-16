@@ -44,7 +44,6 @@ const App = () => {
   return (
     <div className="app_container">
       <div ref={headerRef}>
-        {/* <Header /> */}
       </div>
       <Navbar isHeaderVisible={isHeaderVisible} />
       <Main />
